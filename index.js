@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 //DBM CLI Tool by General Wrex under MIT
 
 const argv = require('minimist')(process.argv.slice(2));

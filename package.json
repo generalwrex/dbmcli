@@ -19,6 +19,9 @@
     "url": "https://github.com/generalwrex/dbmmods-cli/issues"
   },
   "homepage": "https://github.com/generalwrex/dbmmods-cli#readme",
+  "bin": {
+    "dbmcli": "./index.js"
+  },
   "dependencies": {
     "@octokit/rest": "^14.0.5",
     "chalk": "^2.3.0",
