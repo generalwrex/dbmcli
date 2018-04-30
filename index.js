@@ -7,6 +7,7 @@ const chalk       = require('chalk');
 const clear       = require('clear');
 const figlet      = require('figlet');
 const CLI         = require('clui');
+const inquirer    = require('inquirer');
 const Spinner     = CLI.Spinner;
 
 // load lib modules
@@ -43,5 +44,40 @@ let commandArray = commands.load(files.getBotCommands())
 
 console.log(chalk.green(`Found ${commandArray.length} commands`));
 
+console.log(chalk.white(`Welcome! Pick an option below to get started! (Red Features = Not Ready Yet)\r\n`));
 
 
+console.log(chalk.green(`DBM Mods Management Features;\r\n`));
+console.log(chalk.red("Install"),chalk.white("-Install normal or beta mods to the provided bot location."))
+console.log(chalk.red("Uninstall"),chalk.white("-Uninstall mods from the selected bot."))
+console.log(chalk.red("Sync"),chalk.white("-Sync mods between multiple bot locations."))
+console.log(chalk.red("View Changelog"),chalk.white("-View the latest master and beta changelogs."))
+console.log("-------------------------------------------------------------------------------------");
+console.log(chalk.green(`\r\nDBM Commands and Events Management Features;\r\n`));
+console.log(chalk.red("Backup"),chalk.white("-Backup the commands of the selected bot to a json file "))
+console.log(chalk.red("Merge"),chalk.white("-Merge commands or events from one file to another."))
+console.log(chalk.red("Export"),chalk.white("-Export all commands or events to the specified location."))
+console.log(chalk.red("Import"),chalk.white("-Import all commands or events to the specified location. Overwriting is optional."))
+
+// ready ones
+console.log(" ");
+
+function test() {
+    inquirer
+      .prompt({
+        type: 'list',
+        name: 'manager',
+        message: 'Select a manager...',
+        choices: [
+          'DBM Mods Management',
+          'DBM Commands Management',
+          'DBM Events Management'
+        ]
+      })
+      .then((manager) => {
+        console.log('you selected ' + manager);
+      });
+}
+
+test();
+console.log("\r\n\r\n");

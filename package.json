@@ -29,7 +29,7 @@
     "clui": "^0.3.6",
     "configstore": "^3.1.1",
     "figlet": "^1.2.0",
-    "inquirer": "^5.0.1",
+    "inquirer": "^5.2.0",
     "lodash": "^4.17.4",
     "minimist": "^1.2.0",
     "simple-git": "^1.89.0",
