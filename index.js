@@ -13,6 +13,7 @@ const Spinner     = CLI.Spinner;
 const utils = require('./lib/utils');
 const files = require('./lib/files');
 const config = require('./lib/config');
+const commands = require('./lib/commands');
 
 
 ///////////////////BANNER////////////////////////////////////////////////
@@ -36,6 +37,11 @@ if(!config.firstRun){
     status.stop();
     config.setFirstRun(utils.localISOString());
 }
+
+
+let commandArray = commands.load(files.getBotCommands())
+
+console.log(chalk.green(`Found ${commandArray.length} commands`));
 
 
 
