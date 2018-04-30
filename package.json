@@ -1,0 +1,35 @@
+{
+  "name": "dbmmods-cli",
+  "version": "0.0.1",
+  "description": "CLI Utility for DBM",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generalwrex/dbmmods-cli.git"
+  },
+  "keywords": [
+    "dbm"
+  ],
+  "author": "generalwrex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generalwrex/dbmmods-cli/issues"
+  },
+  "homepage": "https://github.com/generalwrex/dbmmods-cli#readme",
+  "dependencies": {
+    "@octokit/rest": "^14.0.5",
+    "chalk": "^2.3.0",
+    "clear": "0.0.1",
+    "clui": "^0.3.6",
+    "configstore": "^3.1.1",
+    "figlet": "^1.2.0",
+    "inquirer": "^5.0.1",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "simple-git": "^1.89.0",
+    "touch": "^3.1.0"
+  }
+}
